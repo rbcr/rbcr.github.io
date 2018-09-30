@@ -54,7 +54,7 @@ $(function () {
         switch (command.trim()) {
             case 'clear':
                 terminal_body.html('');
-                result = '<div class="terminal-prompt"><span class="prompt">guest@robsaurus:~$ </span><span class="terminal-line"></span></div>';
+                result = '<div class="terminal-prompt"><span class="prompt">root@root:~# </span><span class="terminal-line"></span></div>';
                 break;
 
             case 'contact':
@@ -66,7 +66,7 @@ $(function () {
             case 'cv':
                 terminal_body.html('');
                 var typed = new Typed('.terminal-body', {
-                    strings: ['<pre>total 101^1000\ndrwxrwxrwx 1 robsaurus <span class="text-terminal">FULL STACK DEVELOPER</span>^1000\ndrwxrwxrwx 1 robsaurus <span class="text-php">DefaultController.php</span>^1000\n-rwxrwxrwx 1 robsaurus <span class="text-php">PHP + MVC con Laravel y un [mini]mvc propio con Eloquent</span>^1000\ndrwxrwxrwx 1 robsaurus <span class="text-php">+4 años de experiencia en diferentes proyectos</span>^1000\ndrwxrwxrwx 1 robsaurus <span class="text-html">Index.html</span>^1000\n-rwxrwxrwx 1 robsaurus <span class="text-html">Obviamente CSS + Javascript (JQuery, Vue)</span>^1000\ndrwxrwxrwx 1 robsaurus <span class="text-xamarin">MainPage.xaml.cs</span>^1000\ndrwxrwxrwx 1 robsaurus <span class="text-xamarin">También he desarrollo apps con Xamarin (Android, iOS)</span>^1000\ndrwxrwxrwx 1 robsaurus <span class="text-script">script.sh^1000</span>\n-rwxrwxrwx 1 robsaurus <span class="text-script">Instalación y administración de servidores LAMP</span>^1000\ndrwxrwxrwx 1 robsaurus <span class="text-git">.gitignore</span>^1000\n-rwxrwxrwx 1 robsaurus <span class="text-git">Hay algo nuevo? Sin miedo 🕶^1000</span><pre>'],
+                    strings: ['<pre>total 101^1000\ndrwxrwxrwx 1 root <span class="text-terminal">FULL STACK DEVELOPER</span>^1000\ndrwxrwxrwx 1 root <span class="text-php">DefaultController.php</span>^1000\n-rwxrwxrwx 1 root <span class="text-php">PHP + MVC con Laravel y un [mini]mvc propio con Eloquent</span>^1000\ndrwxrwxrwx 1 root <span class="text-php">+4 años de experiencia en diferentes proyectos</span>^1000\ndrwxrwxrwx 1 root <span class="text-html">Index.html</span>^1000\n-rwxrwxrwx 1 root <span class="text-html">Obviamente CSS + Javascript (JQuery, Vue)</span>^1000\ndrwxrwxrwx 1 root <span class="text-xamarin">MainPage.xaml.cs</span>^1000\ndrwxrwxrwx 1 root <span class="text-xamarin">También he desarrollo apps con Xamarin (Android, iOS)</span>^1000\ndrwxrwxrwx 1 root <span class="text-script">script.sh^1000</span>\n-rwxrwxrwx 1 root <span class="text-script">Instalación y administración de servidores LAMP</span>^1000\ndrwxrwxrwx 1 root <span class="text-git">.gitignore</span>^1000\n-rwxrwxrwx 1 root <span class="text-git">Hay algo nuevo? Sin miedo 🕶^1000</span><pre>'],
                     typeSpeed: 5,
                     onStart: function(pos, self) {
                         $('span.typed-cursor').remove();
@@ -101,6 +101,6 @@ $(function () {
     }
 
     function newLine() {
-        terminal_body.append('<div class="terminal-prompt"><span class="prompt">guest@robsaurus:~$ </span><span class="terminal-line"><span class="typed-cursor">▋</span></span></div>');
+        terminal_body.append('<div class="terminal-prompt"><span class="prompt">root@root:~# </span><span class="terminal-line"><span class="typed-cursor">▋</span></span></div>');
     }
 });

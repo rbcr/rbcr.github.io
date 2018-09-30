@@ -20,11 +20,11 @@ p{text-align:center}
     .terminal-line{width:100%;font-size: 22px;}
     .terminal{display:block;margin:auto;border-radius:6px;box-shadow:rgba(0,0,0,0.3) 5px 5px 30px;clear:both;overflow:hidden;-webkit-transition:all .5s ease-out;-moz-transition:all .5s ease-out;-ms-transition:all .5s ease-out;-o-transition:all .5s ease-out;transition:all .5s ease-out}
     .terminal-body{padding:5px 10px;height:450px;overflow-y:auto;word-break:normal;background-color:#000;color:#fff}
-    pre{background-color:#000;color:#fff;border:0;margin:0!important;padding:3px;font-size: 18px;font-family: 'Source Code Pro', monospace;}
+    pre{background-color:#000;color:#fff;border:0;margin:0!important;padding:3px;font-size: 17px;font-family: 'Source Code Pro', monospace;}
     .text-help > a {font-size: 35px;padding:10px;font-family:'VT323',monospace;color: #ffffff;text-decoration: none;}
 }
 @media (min-width: 768px) and (max-width: 991px) {
-    h1{padding:50px 0;font-family:'VT323',monospace;font-size: 75px;}
+    h1{margin-top:100px;padding:50px 0;font-family:'VT323',monospace;font-size: 75px;}
 }
 @media (min-width: 992px) and (max-width: 1199px) {
     h1{padding:25px 0;font-family:'VT323',monospace;font-size: 50px;}
