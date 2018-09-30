@@ -1,24 +1,45 @@
-*{font-family:'Roboto',sans-serif}
+*{font-family: 'Source Code Pro', monospace;}
 body{background-color:#083962;color:#fff}
 #container{position:absolute;bottom:50px}
-h1{padding:50px 0;font-family:'VT323',monospace;font-size: 50px;}
 p{text-align:center}
 .text-help{margin-top:10px}
-.terminal{font-family:Monaco,Consolas,"Lucida Console",monospace;display:block;margin:auto;border-radius:6px;box-shadow:rgba(0,0,0,0.3) 5px 5px 30px;clear:both;overflow:hidden;-webkit-transition:all .5s ease-out;-moz-transition:all .5s ease-out;-ms-transition:all .5s ease-out;-o-transition:all .5s ease-out;transition:all .5s ease-out}
-.prompt{color:#7cfc00}
-.terminal-body{padding:5px 10px;height:300px;overflow-y:auto;word-break:normal;background-color:#000;color:#fff}
 #shell_output{margin:5px 0}
 .terminal-title-bar{padding:5px 0;font-size:.75em;text-align:center;text-shadow:rgba(255,255,255,0.8) 0 1px 0;background-color:#f8f8f8;background-image:-webkit-linear-gradient(top,#e8e8e8,#bcbbbc);background-image:-moz-linear-gradient(top,#e8e8e8,#bcbbbc);background-image:linear-gradient(top,#e8e8e8,#bcbbbc);box-shadow:inset rgba(255,255,255,0.7) 0 1px 1px;border-bottom:#6a6a6a 1px solid}
 .typed-cursor{opacity:1;-webkit-animation:blink .7s infinite;-moz-animation:blink .7s infinite;animation:blink .7s infinite}
 .terminal-prompt{margin-bottom:10px}
-.terminal-line{width:100%}
 .text-terminal{background-color:blue;color:#fff}
 .text-php{color:#f0f}
 .text-html{color:#ff0}
 .text-xamarin{color:#87cefa}
 .text-script{color:#ff8c00}
 .text-git{color:#a9a9a9}
-pre{background-color:#000;color:#fff;border:0;margin:0!important;padding:3px}
+.terminal{font-family: 'Roboto Mono', monospace;}
+@media (min-width: 320px) {
+    h1{padding:75px 0;font-family:'VT323',monospace;font-size: 75px;}
+    .prompt{color:#7cfc00;font-size: 22px;}
+    .terminal-line{width:100%;font-size: 22px;}
+    .terminal{display:block;margin:auto;border-radius:6px;box-shadow:rgba(0,0,0,0.3) 5px 5px 30px;clear:both;overflow:hidden;-webkit-transition:all .5s ease-out;-moz-transition:all .5s ease-out;-ms-transition:all .5s ease-out;-o-transition:all .5s ease-out;transition:all .5s ease-out}
+    .terminal-body{padding:5px 10px;height:450px;overflow-y:auto;word-break:normal;background-color:#000;color:#fff}
+    pre{background-color:#000;color:#fff;border:0;margin:0!important;padding:3px;font-size: 18px;font-family: 'Source Code Pro', monospace;}
+    .text-help > a {font-size: 35px;padding:10px;font-family:'VT323',monospace;color: #ffffff;text-decoration: none;}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    h1{padding:50px 0;font-family:'VT323',monospace;font-size: 75px;}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    h1{padding:25px 0;font-family:'VT323',monospace;font-size: 50px;}
+    .terminal-body{padding:5px 10px;height:350px;overflow-y:auto;word-break:normal;background-color:#000;color:#fff}
+    .prompt{color:#7cfc00;font-size: 15px;}
+    .terminal-line{width:100%;font-size: 15px;}
+    pre{background-color:#000;color:#fff;border:0;margin:0!important;padding:3px;font-size: 15px;font-family: 'Source Code Pro', monospace;}
+}
+@media (min-width: 1200px) {
+    h1{padding:25px 0;font-family:'VT323',monospace;font-size: 50px;}
+    .terminal-body{padding:5px 10px;height:350px;overflow-y:auto;word-break:normal;background-color:#000;color:#fff}
+    .prompt{color:#7cfc00;font-size: 15px;}
+    .terminal-line{width:100%;font-size: 15px;}
+    pre{background-color:#000;color:#fff;border:0;margin:0!important;padding:3px;font-size: 13px;font-family: 'Source Code Pro', monospace;}
+}
 @keyframes blink {
     0%{opacity:1}
     50%{opacity:0}

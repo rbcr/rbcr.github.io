@@ -3,8 +3,14 @@ $(function () {
     const html = $('html');
     const terminal_body = $('.terminal-body');
 
-    if(terminal_body.length){
+    if(terminal_body.length)
         newLine();
+
+    if(!$('.terminal-contact').is(":hidden")){
+        loadCommand('cv');
+        setInterval(function () {
+            loadCommand('cv');
+        }, 30000);
     }
 
     html.on('keyup', 'body', function (e) {
@@ -24,7 +30,6 @@ $(function () {
 
             default:
                 var s = String.fromCharCode(e.which);
-                console.log(s);
                 if (s.match(/[a-zA-Z\.]/)){
                     terminal_line.find('.typed-cursor').remove();
                     terminal_line.append(s.toLowerCase() + '<span class="typed-cursor">▋</span>');
@@ -91,6 +96,7 @@ $(function () {
                 result = '<br/>Command "' + command + '" not found';
                 break;
         }
+        terminal_body.animate({ scrollTop: $(this).height() }, "slow");
         return result;
     }
 
