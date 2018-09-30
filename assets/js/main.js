@@ -10,7 +10,7 @@ $(function () {
         loadCommand('cv');
         setInterval(function () {
             loadCommand('cv');
-        }, 60000);
+        }, 90000);
     }
 
     html.on('keyup', 'body', function (e) {
